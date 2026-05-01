@@ -2,14 +2,15 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Zap, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#beneficios", label: "Benefícios" },
-  { href: "#como-funciona", label: "Como Funciona" },
-  { href: "#depoimentos", label: "Depoimentos" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#sobre", label: "Sobre Nós" },
+  { href: "#solucoes", label: "Soluções" },
+  { href: "#conhecimento", label: "Conhecimento" },
+  { href: "#faq", label: "Ajuda" },
+  { href: "#contato", label: "Contato" },
 ];
 
 export function Navbar() {
@@ -28,17 +29,14 @@ export function Navbar() {
         "fixed top-0 inset-x-0 z-50 transition-all duration-300",
         scrolled
           ? "bg-white/95 backdrop-blur-sm shadow-sm"
-          : "bg-transparent"
+          : "bg-white border-b border-gray-100"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-orange-500 rounded-xl flex items-center justify-center">
-              <Zap className="w-5 h-5 text-white fill-white" />
-            </div>
+          <Link href="/" className="flex items-center gap-1">
             <span className="text-2xl font-black tracking-tight text-gray-900">
-              EDGE<span className="text-orange-500">.</span>
+              Solar<span className="text-orange-500">Z</span>
             </span>
           </Link>
 
@@ -47,19 +45,25 @@ export function Navbar() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-gray-600 hover:text-orange-500 font-medium transition-colors text-sm"
+                className="text-gray-600 hover:text-gray-900 font-medium transition-colors text-sm"
               >
                 {l.label}
               </Link>
             ))}
           </nav>
 
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-3">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors"
+            >
+              Login
+            </a>
             <a
               href="#contato"
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-full text-sm transition-colors shadow-sm"
             >
-              Simulação Gratuita
+              Comece Agora
             </a>
           </div>
 
@@ -83,12 +87,18 @@ export function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <div className="pt-3 border-t mt-2">
+            <div className="pt-3 border-t mt-2 flex flex-col gap-2">
+              <a
+                href="#"
+                className="block text-center text-gray-700 font-medium px-5 py-3 rounded-full text-sm border border-gray-200"
+              >
+                Login
+              </a>
               <a
                 href="#contato"
                 className="block text-center bg-orange-500 text-white font-semibold px-5 py-3 rounded-full text-sm"
               >
-                Simulação Gratuita
+                Comece Agora
               </a>
             </div>
           </div>

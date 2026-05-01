@@ -1,31 +1,31 @@
 const steps = [
   {
     number: "01",
-    title: "Solicite a simulação",
+    title: "Preencha o formulário",
     description:
-      "Preencha nosso formulário ou entre em contato. Em minutos você descobre exatamente quanto vai economizar.",
-    icon: "📱",
+      "Entre em contato com o Time Comercial para uma consulta inicial e personalização da solução adequada ao seu negócio.",
+    icon: "📋",
   },
   {
     number: "02",
-    title: "Projeto personalizado",
+    title: "Faça o primeiro acesso",
     description:
-      "Nossa equipe de engenheiros cria um projeto 100% personalizado para o seu telhado e consumo.",
-    icon: "📐",
+      "Receba suas credenciais e acesse a plataforma SolarZ. Nossa equipe estará disponível para guiar você no onboarding.",
+    icon: "🔑",
   },
   {
     number: "03",
-    title: "Instalação rápida",
+    title: "Cadastre as suas usinas",
     description:
-      "Instalamos em até 7 dias úteis com zero sujeira e zero transtorno para você e sua família.",
-    icon: "🔧",
+      "Adicione as usinas dos seus clientes ao sistema. Compatível com mais de 100 portais de monitoramento.",
+    icon: "☀️",
   },
   {
     number: "04",
-    title: "Comece a economizar",
+    title: "Venda e gerencie mais",
     description:
-      "Sua próxima conta de luz já será menor. Acompanhe sua geração em tempo real pelo app.",
-    icon: "⚡",
+      "Use o CRM, o gerador de propostas, o chat e o pós-venda para escalar suas vendas e encantar seus clientes.",
+    icon: "🚀",
   },
 ];
 
@@ -35,14 +35,14 @@ export function HowItWorksSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-orange-500 font-semibold text-sm uppercase tracking-wider">
-            Simples assim
+            Como começar
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-3 mb-4">
-            Como funciona
+            Comece a vender mais em 4 passos
           </h2>
           <p className="text-gray-600 text-lg">
-            Do primeiro contato até começar a economizar — um processo simples,
-            rápido e sem burocracia.
+            Simples, rápido e sem burocracia. Em minutos você já está operando
+            com o ecossistema completo da SolarZ.
           </p>
         </div>
 

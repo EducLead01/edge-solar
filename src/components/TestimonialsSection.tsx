@@ -1,29 +1,29 @@
 const testimonials = [
   {
-    name: "Maria Santos",
-    role: "Moradora em São Paulo, SP",
-    avatar: "MS",
+    name: "Talles Silvano",
+    role: "CEO da Taldi Engenharia",
+    avatar: "TS",
     quote:
-      "Minha conta de luz caiu de R$850 para R$48 por mês. Não acreditei quando recebi a primeira fatura depois da instalação. A equipe da EDGE foi incrível do começo ao fim!",
-    badge: "Economizando R$802/mês",
+      "Nós gerimos cerca de 1.000 usinas com auxílio da SolarZ. Ela nos ajuda a automatizar e gerir todo o volume gigante de clientes que a gente tem.",
+    badge: "1.000 usinas gerenciadas",
     stars: 5,
   },
   {
-    name: "João Ferreira",
-    role: "Empresário em Belo Horizonte, MG",
-    avatar: "JF",
+    name: "Marcos Fernandes",
+    role: "Gestor de Pós-Venda — Eletrobidu",
+    avatar: "MF",
     quote:
-      "Instalamos na nossa empresa e o retorno veio muito antes do esperado. Em 3 anos já pagou tudo. Agora é economia pura. Indico a EDGE para todo mundo.",
-    badge: "ROI em menos de 3 anos",
+      "Atualmente, a Eletrobidu chega a fazer 300 vendas por mês! Conseguimos saber se o cliente está gerando energia dentro do desempenho esperado.",
+    badge: "300 vendas por mês",
     stars: 5,
   },
   {
-    name: "Ana Lima",
-    role: "Proprietária de chácara em Campinas, SP",
-    avatar: "AL",
+    name: "Lucas Fernandes",
+    role: "CEO da Azzon Energia",
+    avatar: "LF",
     quote:
-      "Melhor investimento que já fiz para minha chácara. Sem conta de luz, sem preocupação. O app de monitoramento é fantástico, acompanho tudo em tempo real.",
-    badge: "Zero conta de luz",
+      "O Summit é extremamente valioso para nós! Conseguimos nos conectar com muita gente do setor e isso tem gerado oportunidades incríveis de negócio.",
+    badge: "Rede de integradores",
     stars: 5,
   },
 ];
@@ -37,7 +37,7 @@ export function TestimonialsSection() {
             Depoimentos
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-3 mb-4">
-            Quem usa a EDGE não para de economizar
+            Integradores que já vendem mais com a SolarZ
           </h2>
         </div>
 
@@ -65,7 +65,7 @@ export function TestimonialsSection() {
                   <div className="font-semibold text-gray-900 text-sm">{t.name}</div>
                   <div className="text-gray-500 text-xs truncate">{t.role}</div>
                 </div>
-                <div className="ml-auto shrink-0 bg-green-50 text-green-700 text-xs font-semibold px-2 py-1 rounded-full border border-green-100">
+                <div className="ml-auto shrink-0 bg-orange-50 text-orange-700 text-xs font-semibold px-2 py-1 rounded-full border border-orange-100">
                   {t.badge}
                 </div>
               </div>

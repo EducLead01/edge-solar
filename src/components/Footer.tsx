@@ -1,34 +1,32 @@
-import { Zap, Mail, Phone, Globe, Share2, Link } from "lucide-react";
+import { Mail, Phone, Globe, Share2, Link2, Play } from "lucide-react";
 
 const socialLinks = [
-  { Icon: Globe, label: "Instagram" },
-  { Icon: Share2, label: "Facebook" },
-  { Icon: Link, label: "LinkedIn" },
+  { Icon: Globe, label: "Instagram", href: "#" },
+  { Icon: Link2, label: "LinkedIn", href: "#" },
+  { Icon: Share2, label: "Facebook", href: "#" },
+  { Icon: Play, label: "YouTube", href: "#" },
 ];
 
 export function Footer() {
   return (
     <footer className="bg-gray-950 text-gray-400 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
-                <Zap className="w-4 h-4 text-white fill-white" />
-              </div>
-              <span className="text-white text-xl font-black">
-                EDGE<span className="text-orange-500">.</span>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-1 mb-4">
+              <span className="text-white text-2xl font-black">
+                Solar<span className="text-orange-500">Z</span>
               </span>
             </div>
-            <p className="text-sm leading-relaxed mb-6">
-              Energia solar de alta performance para residências e empresas.
-              Economize, valorize e contribua com o futuro.
+            <p className="text-sm leading-relaxed mb-6 max-w-xs">
+              Um ecossistema completo para o integrador solar monitorar, vender
+              e encantar clientes com mais eficiência.
             </p>
             <div className="flex gap-3">
-              {socialLinks.map(({ Icon, label }, i) => (
+              {socialLinks.map(({ Icon, label, href }) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={label}
+                  href={href}
                   aria-label={label}
                   className="w-9 h-9 bg-gray-800 hover:bg-orange-500 rounded-lg flex items-center justify-center transition-colors group"
                 >
@@ -39,16 +37,22 @@ export function Footer() {
           </div>
 
           <div>
+            <h4 className="text-white font-semibold text-sm mb-4">Sobre Nós</h4>
+            <ul className="space-y-2.5 text-sm">
+              {["A SolarZ", "Carreiras", "SolarZ Awards", "Canal de Ética"].map((item) => (
+                <li key={item}>
+                  <a href="#" className="hover:text-orange-400 transition-colors">
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
             <h4 className="text-white font-semibold text-sm mb-4">Soluções</h4>
             <ul className="space-y-2.5 text-sm">
-              {[
-                "Solar Residencial",
-                "Solar Comercial",
-                "Solar Industrial",
-                "Solar Rural",
-                "Monitoramento",
-                "Manutenção",
-              ].map((item) => (
+              {["Monitoramento", "CRM", "Proposta", "Chat", "Pay", "Pós-Vendas"].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-orange-400 transition-colors">
                     {item}
@@ -59,16 +63,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold text-sm mb-4">Empresa</h4>
+            <h4 className="text-white font-semibold text-sm mb-4">Conhecimento</h4>
             <ul className="space-y-2.5 text-sm">
-              {[
-                "Sobre nós",
-                "Como funciona",
-                "Depoimentos",
-                "Blog",
-                "Parcerias",
-                "Trabalhe conosco",
-              ].map((item) => (
+              {["Blog", "Treinamentos", "Material Rico", "Podcast", "SolarZ BI"].map((item) => (
                 <li key={item}>
                   <a href="#" className="hover:text-orange-400 transition-colors">
                     {item}
@@ -76,27 +73,24 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-semibold text-sm mb-4">Contato</h4>
+            <h4 className="text-white font-semibold text-sm mt-6 mb-4">Contato</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-orange-500 shrink-0" />
                 <a
-                  href="tel:+5511999999999"
+                  href="tel:+5511956751469"
                   className="hover:text-orange-400 transition-colors"
                 >
-                  (11) 99999-9999
+                  (11) 95675-1469
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-500 shrink-0" />
                 <a
-                  href="mailto:contato@edgesolar.com.br"
+                  href="mailto:contato@solarz.com.br"
                   className="hover:text-orange-400 transition-colors"
                 >
-                  contato@edgesolar.com.br
+                  contato@solarz.com.br
                 </a>
               </li>
             </ul>
@@ -105,7 +99,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs">
-            © 2024 EDGE Solar. Todos os direitos reservados.
+            © {new Date().getFullYear()} SolarZ. Todos os direitos reservados.
           </p>
           <div className="flex gap-4 text-xs">
             <a href="#" className="hover:text-orange-400 transition-colors">

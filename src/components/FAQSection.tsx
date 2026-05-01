@@ -5,28 +5,28 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    q: "Quanto vou economizar na conta de luz?",
-    a: "A economia média dos nossos clientes é de 85% a 95% na conta de luz. O valor exato depende do seu consumo, localização e tamanho do sistema. Faça uma simulação gratuita para saber exatamente quanto você vai economizar.",
+    q: "O que é a SolarZ?",
+    a: "A SolarZ é uma empresa de tecnologia especializada em soluções integradas de monitoramento e gestão para usinas solares voltada para integradores. Oferecemos um ecossistema completo que inclui monitoramento, CRM, gerador de propostas, chat, pagamentos e gestão de pós-vendas.",
   },
   {
-    q: "Quanto tempo leva a instalação?",
-    a: "O processo completo leva, em média, entre 7 e 15 dias úteis após a aprovação do projeto. A instalação em si é realizada em 1 a 2 dias, sem quebrar nada ou causar transtornos.",
+    q: "Como funciona o monitoramento?",
+    a: "Nosso sistema coleta dados precisos dos painéis solares, permitindo visualizar desempenho, produção de energia, eficiência e alertas em tempo real. Somos compatíveis com mais de 100 portais de monitoramento do mercado.",
   },
   {
-    q: "E nos dias sem sol ou chuvosos?",
-    a: "Seu sistema é conectado à rede elétrica (on-grid). Nos dias sem sol, você consome energia da rede e credita a energia produzida nos dias ensolarados para compensar. No Brasil, há sol mais de 300 dias por ano.",
+    q: "A plataforma é compatível com todos os tipos de usinas?",
+    a: "Sim, nossas soluções são flexíveis e compatíveis com diversos tipos de usinas solares, desde pequenas instalações residenciais até grandes parques solares comerciais e industriais.",
   },
   {
-    q: "Quais são as formas de pagamento?",
-    a: "Oferecemos financiamento em até 84 meses com taxas acessíveis, além de pagamento à vista com desconto. Em muitos casos, a parcela do financiamento é menor que a sua conta de luz atual.",
+    q: "Quais serviços a SolarZ oferece?",
+    a: "Oferecemos monitoramento em tempo real, CRM para gestão de clientes, gerador de propostas automatizado, canal de chat integrado ao WhatsApp, ferramenta de pagamentos (SolarZ Pay) e consultoria de gestão em pós-vendas.",
   },
   {
-    q: "Os painéis têm garantia?",
-    a: "Sim! Os painéis têm garantia de 25 anos de performance e os inversores têm garantia de 10 anos. Nossa empresa oferece suporte técnico completo durante toda a vida útil do sistema.",
+    q: "Quais são os principais benefícios para o integrador?",
+    a: "Gestão mais eficiente das usinas e clientes, aumento nas vendas com o CRM e gerador de propostas, redução de custos operacionais, identificação de oportunidades de upsell no pós-venda e acesso a uma comunidade de mais de 6 mil integradores.",
   },
   {
-    q: "Preciso ser proprietário do imóvel?",
-    a: "O ideal é ser proprietário, mas também atendemos locatários com autorização do proprietário e condomínios. Entre em contato para analisarmos a sua situação específica.",
+    q: "Como posso começar a usar a SolarZ?",
+    a: "Basta entrar em contato com nosso Time Comercial para uma consulta inicial. Nossa equipe vai entender o seu negócio e personalizar a solução ideal para você. O onboarding é guiado e você estará operando em poucos passos.",
   },
 ];
 
@@ -44,7 +44,7 @@ export function FAQSection() {
             Perguntas frequentes
           </h2>
           <p className="text-gray-600">
-            Tudo que você precisa saber antes de instalar energia solar.
+            Tudo que você precisa saber sobre a plataforma SolarZ.
           </p>
         </div>
 

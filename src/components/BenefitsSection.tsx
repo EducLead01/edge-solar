@@ -1,7 +1,14 @@
-import { Zap, TrendingUp, Leaf, Home, Headphones, Timer } from "lucide-react";
+import {
+  Activity,
+  Users,
+  FileText,
+  MessageCircle,
+  CreditCard,
+  TrendingUp,
+} from "lucide-react";
 import type { ElementType } from "react";
 
-interface Benefit {
+interface Solution {
   icon: ElementType;
   title: string;
   description: string;
@@ -9,52 +16,52 @@ interface Benefit {
   bg: string;
 }
 
-const benefits: Benefit[] = [
+const solutions: Solution[] = [
   {
-    icon: Zap,
-    title: "Economia de até 95%",
+    icon: Activity,
+    title: "Monitoramento",
     description:
-      "Reduza drasticamente sua conta de luz todo mês e use essa economia para o que realmente importa.",
+      "Acompanhe os status das suas usinas solares e tenha total controle sobre desempenho, eficiência e controle financeiro.",
     color: "text-orange-500",
     bg: "bg-orange-50",
   },
   {
-    icon: Home,
-    title: "Valoriza seu Imóvel",
+    icon: Users,
+    title: "CRM",
     description:
-      "Imóveis com energia solar valem até 8% a mais no mercado. É um investimento que se paga sozinho.",
+      "Gerencie as atividades, visualize o progresso das negociações e personalize propostas dentro da tecnologia de gestão de cliente.",
     color: "text-blue-500",
     bg: "bg-blue-50",
   },
   {
-    icon: Leaf,
-    title: "Energia 100% Limpa",
+    icon: FileText,
+    title: "Gerador de Propostas",
     description:
-      "Produza sua própria energia sem emitir CO₂. Contribua com o meio ambiente para as próximas gerações.",
+      "Dimensione e acompanhe seus projetos solares com etapas automatizadas e propostas personalizadas.",
     color: "text-green-500",
     bg: "bg-green-50",
   },
   {
-    icon: TrendingUp,
-    title: "ROI em até 4 anos",
+    icon: MessageCircle,
+    title: "Chat",
     description:
-      "O sistema se paga em média entre 3 e 5 anos. Depois disso, é economia pura por décadas.",
+      "Otimize tempo e resultado acompanhando todas as mensagens enviadas através de um canal exclusivo no WhatsApp.",
     color: "text-purple-500",
     bg: "bg-purple-50",
   },
   {
-    icon: Headphones,
-    title: "Suporte Completo",
+    icon: CreditCard,
+    title: "SolarZ Pay",
     description:
-      "Nossa equipe está disponível para monitorar e manter seu sistema funcionando perfeitamente.",
+      "Uma ferramenta de pagamento completa para receber dos clientes com total integração ao monitoramento.",
     color: "text-rose-500",
     bg: "bg-rose-50",
   },
   {
-    icon: Timer,
-    title: "Instalação em 7 dias",
+    icon: TrendingUp,
+    title: "Gestão em Pós-Vendas",
     description:
-      "Do projeto à instalação em até 7 dias úteis. Rápido, seguro e sem transtornos para você.",
+      "Transforme seu pós-vendas em um dos braços de geração de receita mais importante da sua companhia.",
     color: "text-amber-500",
     bg: "bg-amber-50",
   },
@@ -62,34 +69,34 @@ const benefits: Benefit[] = [
 
 export function BenefitsSection() {
   return (
-    <section id="beneficios" className="py-20 lg:py-28 bg-white">
+    <section id="solucoes" className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-orange-500 font-semibold text-sm uppercase tracking-wider">
-            Por que EDGE?
+            Soluções
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-3 mb-4">
-            Vantagens que transformam sua vida
+            Tudo que o integrador precisa em um só lugar
           </h2>
           <p className="text-gray-600 text-lg">
-            Mais do que painéis solares — entregamos economia real, segurança e
-            tranquilidade para você e sua família.
+            Da prospecção ao pós-venda, a SolarZ oferece o ecossistema completo
+            para você vender mais e gerenciar melhor.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {benefits.map((b) => (
+          {solutions.map((s) => (
             <div
-              key={b.title}
+              key={s.title}
               className="group bg-white rounded-2xl border border-gray-100 hover:border-orange-100 p-6 hover:shadow-lg transition-all duration-300"
             >
               <div
-                className={`w-12 h-12 ${b.bg} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                className={`w-12 h-12 ${s.bg} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
               >
-                <b.icon className={`w-6 h-6 ${b.color}`} />
+                <s.icon className={`w-6 h-6 ${s.color}`} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{b.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{b.description}</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">{s.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
             </div>
           ))}
         </div>
